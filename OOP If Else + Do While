@@ -1,0 +1,28 @@
+package com.OOPIF;
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        int score=30;
+        int nomor;
+        
+
+        System.out.println("Score anda 30");
+        //if else loop
+         if(score>10){
+        System.out.println("PASS");
+        }else{ 
+        System.out.println("NOT PASS");
+        }
+        for(nomor=0; nomor<3; nomor++){
+        System.out.println("Selamat anda berhasil");
+        }
+        //do-while loop
+       do{
+            System.out.println("Selamat anda lulus");
+            score=10;
+        }
+        while(score>10);
+    }
+}

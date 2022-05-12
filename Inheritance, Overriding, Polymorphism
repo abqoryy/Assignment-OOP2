@@ -1,0 +1,46 @@
+package com.OOPJAVA;
+
+ // Inheritance, Overriding, Polymorphism
+
+ // super class, parent class, base class
+class Player{
+    String PlayerInfo, display = "Paris Saint Germain";
+       
+    void display(){
+        System.out.println("Team : " + this.display);
+    }
+}
+
+// subclass, child class, derived class
+class PlayerPace extends Player{
+    double dribbling;
+    String position;
+
+    void display(){
+        System.out.println("Dribbling : " + this.dribbling);
+        System.out.println("Preferred Position : " + this.position);
+    }
+}
+class PlayerFinishing extends Player{
+    // kosong
+}
+
+public class Main2 {
+    public static void main(String[] args) {
+        Player player1 = new Player();
+        player1.PlayerInfo = "Mbappe";
+        System.out.println("Player Name : " + player1.PlayerInfo);
+        player1.display();
+
+        PlayerPace player2 = new PlayerPace();
+        player2.PlayerInfo = "90";
+        player2.dribbling = 92;
+        player2.position = "ST";
+        System.out.println("Player Pace : " + player2.PlayerInfo);
+        player2.display();
+
+        PlayerFinishing player3 = new PlayerFinishing();
+        player3.PlayerInfo = "88";
+        System.out.println("Player Finishing : " + player3.PlayerInfo);
+    }
+}
